@@ -1,0 +1,249 @@
+<html>
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+</style>
+<body >
+<html>
+<body>
+
+  <video controls autoplay width="100%" height="240" controls>
+  <source src="v1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</body>
+</html>
+
+<div class="header">
+	<img src="icc.png" alternate="ICC" height="200px" width="200px">
+  <h1>ENGLAND AND WALES</h1>
+  <p>WORLD CUP 2019</p>
+  <p>FINALS OF ICC WORLD CUP 2019</p>
+  <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jul 15, 2019 15:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</div>
+<div class="topnav">
+  <a href="worldcup2.html">NEWS</a>
+  <a href="worldcup3.html">MATCH</a>
+  <a href="worldcup4.html">STANDING</a>
+  <a href="worldcup5.html">ICC LOGIN/REGISTER</a>
+  <a href="worldcup6.html">BOOK A TICKET</a>
+   <a href="worldcup7.html">GALLERY</a>
+</div>
+
+<h1>STANDINGS OF TEAMS</h1>
+
+<table BORDER="1" ALIGN="CENTER">
+<tr>
+	<th>POSITION</th>
+	<th>TEAM</TH>
+	<TH>PLAYED</TH>
+	<TH>WON</TH>
+	<TH>LOST</TH>
+	<TH>POINTS</TH>
+</TR>	
+
+
+<tr>
+	<th>1</th>
+	<th>NEW ZEALAND</TH>
+	<TH>6</TH>
+	<TH>5</TH>
+	<TH>1</TH>
+	<TH>11</TH>
+</TR>
+
+
+<tr>
+	<th>2</th>
+	<th>AUSTRALIA</TH>
+	<TH>5</TH>
+	<TH>4</TH>
+	<TH>0</TH>
+	<TH>10</TH>
+</TR>
+
+<tr>
+	<th>3</th>
+	<th>INDIA</TH>
+	<TH>5</TH>
+	<TH>4</TH>
+	<TH>1</TH>
+	<TH>9</TH>
+</TR>
+
+<tr>
+	<th>4</th>
+	<th>ENGLAND</TH>
+	<TH>4</TH>
+	<TH>3</TH>
+	<TH>0</TH>
+	<TH>8</TH>
+</TR>
+
+<tr>
+	<th>5</th>
+	<th>SRI LANKA</TH>
+	<TH>6</TH>
+	<TH>2</TH>
+	<TH>3</TH>
+	<TH>6</TH>
+</TR>
+
+<tr>
+	<th>6</th>
+	<th>BANGLADESH</TH>
+	<TH>5</TH>
+	<TH>1</TH>
+	<TH>2</TH>
+	<TH>5</TH>
+</TR>
+
+<tr>
+	<th>7</th>
+	<th>PAKISTAN</TH>
+	<TH>5</TH>
+	<TH>1</TH>
+	<TH>3</TH>
+	<TH>5</TH>
+</TR>
+
+<tr>
+	<th>8</th>
+	<th>WEST INDIES</TH>
+	<TH>6</TH>
+	<TH>1</TH>
+	<TH>4</TH>
+	<TH>3</TH>
+</TR>
+
+<tr>
+	<th>9</th>
+	<th>SOUTH AFRICA</TH>
+	<TH>5</TH>
+	<TH>1</TH>
+	<TH>3</TH>
+	<TH>3</TH>
+</TR>
+
+<tr>
+	<th>10</th>
+	<th>AFGANISTAN</TH>
+	<TH>6</TH>
+	<TH>0</TH>
+	<TH>6</TH>
+	<TH>0</TH>
+</TR>
+
